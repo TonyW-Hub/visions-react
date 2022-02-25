@@ -57,8 +57,8 @@ const ProductList: FunctionComponent = () => {
               <p className='productPrice'>Price</p>
               <p className='productPrice VAT'>Price<small>(including VAT)</small></p>
             </div>
-            // Créer un nouveau tableau pour chaque produit récupéré depuis l'API
-            // Gestion de l'affichage pour chaque élement du tableau
+            {/* Créer un nouveau tableau pour chaque produit récupéré depuis l'API
+              Gestion de l'affichage pour chaque élement du tableau */}
             { products.map(product => (
                 <div className='items' key={product.id} onClick={() => navigate("/product/"+product.id)}>
                   <p className='items-title'>
